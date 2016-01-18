@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css">
+	    <link rel="stylesheet" href="main.css">
+	    <script language="JavaScript" type="text/javascript">
+	      function Tog(i){
+	            var expandable = document.getElementById("expandable".concat(i));
+	            var arrow = document.getElementById("arrow".concat(i));
+	            var icon_state = arrow.className;
+	            if (icon_state == "glyphicon glyphicon-menu-down"){
+	            	expandable.style.display = "block";
+	            	arrow.className = "glyphicon glyphicon-menu-up";
+	            }
+	            else if (icon_state == "glyphicon glyphicon-menu-up"){
+	            	expandable.style.display = "none";	
+	            	arrow.className = "glyphicon glyphicon-menu-down";
+	            }
+	          }
+	    </script>
+	</head>
+
+	<div class="nav">
+      <div class="container">
+        <ul class = "pull-left">
+          <li><a href="#">CV</a></li>
+          <li><a href="#">Research</a></li>
+        </ul>
+        <ul class = "pull-right">
+          <li><a href="index.html">Muhammad Ahmed Shah</a></li>
+        </ul>
+      </div>
+    </div>
+
+	<h1 align='center' style="color:#8d5a5a">Muhammad Ahmed Shah</h1>
+	<p class = "lead" align = "center">mshah1@cmu.edu | (+974)55995245</p>
+
+	<h3 style="color:#8d5a5a">Education
+	<a href="javascript:Tog('1')"><span id="arrow1" class="glyphicon glyphicon-menu-up" style="color:#9a9a9a"></a></h3>
+
+	<div id = "expandable1">
+		<div class="row">
+			<div class = "col-md-1"><h4>2017</h4></div>
+			<div class="col-md-3">
+				<h4>Carnegie Mellon University</h4>
+				<p class style="font-size:16px;color:#5a5a5a"> Bsc. Computer Science <br>Minor: Mathematics </p>
+			</div>
+		</div>
+	</div>
+
+	<h3 style="color:#8d5a5a">Relevant Coursework
+	<a href="javascript:Tog('2')"><span id="arrow2" class="glyphicon glyphicon-menu-up" style="color:#9a9a9a"></a></h3>
+
+	<div id = "expandable2">
+		<div class="row">
+			<div class = "col-md-4">
+				<h4>Low-Level Development</h4>
+				<ul>
+					<li>Introduction to Computer Systems</li>
+					<li>Computer Networks</li>
+					<li>Embedded Systems (in progress)</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h4>Software Development</h4>
+				<ul>
+					<li>Principles of Software Construction</li>
+					<li>Constructive Logic</li>
+					<li>Formal Languages, Automata and Computability</li>
+					<li>Machine Learning (in progress)</li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h4>Algorithms and Theory</h4>
+				<ul>
+					<li>Algorithm Design and Analysis</li>
+					<li>Introduction to Text Processing</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<h3 style="color:#8d5a5a">Work Experience
+	<a href="javascript:Tog('3')"><span id="arrow3" class="glyphicon glyphicon-menu-up" style="color:#9a9a9a"></a></h3>
+
+	<div id = "expandable3">
+		<div class = "row">
+			<div class = "col-md-3">
+				<p style="font-size:18px">
+					Jan'14 -- Present
+				</p>
+			</div>
+			<div class = "col-md-4">
+				<p style="font-size:18px">
+					<b>Course Assistant</b>
+				</p>
+			</div>
+			<div class = "col-md-5">
+				<p style="font-size:18px">
+					Carnegie Mellon University, Doha, Qatar    
+					<a href="javascript:Tog('4')">
+						<span id="arrow4" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+		</div>
+		<div id="expandable4" style="overflow:hidden;display:none">
+			<ul>
+				<li>Held regular office hours to assist students with homework and concepts taught in class and assisted the professor with grading.</li>
+				<li>
+					Courses Assisted:
+					<ul>
+						<li>15-110: Principles of Computation</li>
+						<li>15-251: Great Theoretical Ideas in Computer Science</li>
+						<li>15-112: Fundamentals of Programming</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class = "row">
+			<div class = "col-md-3">
+				<p style="font-size:18px">
+					Sep'13 -- Present
+				</p>
+			</div>
+			<div class = "col-md-4">
+				<p style="font-size:18px">
+					<b>Senior IT Helpdesk Associate</b>
+				</p>
+			</div>
+			<div class = "col-md-5">
+				<p style="font-size:18px">
+					Northwestern University, Doha, Qatar    
+					<a href="javascript:Tog('5')">
+						<span id="arrow5" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+		</div>
+		<div id="expandable5" style="overflow:hidden;display:none">
+			<ul>
+				<li>Assisted students, faculty and staff with using university provided technology.</li>
+				<li>Installed and maintained old equipment, managing inventory of circulating equipment, retirement of old equipment and deployment of new equipment.</li>
+			</ul>
+		</div>
+
+		<div class = "row">
+			<div class = "col-md-3">
+				<p style="font-size:18px">
+					Jun'13 -- Present
+				</p>
+			</div>
+			<div class = "col-md-4">
+				<p style="font-size:18px">
+					<b>IT and Media Head</b>
+				</p>
+			</div>
+			<div class = "col-md-5">
+				<p style="font-size:18px">
+					Al-Muawin, Karachi, Pakistan    
+					<a href="javascript:Tog('6')">
+						<span id="arrow6" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+		</div>
+		<div id="expandable6" style="overflow:hidden;display:none">
+			<ul>
+				<li>Integrated technology to help the operations of a student run NGO.</li>
+			</ul>
+		</div>
+	</div>
+
+	<h3 style="color:#8d5a5a">Projects and Research
+	<a href="javascript:Tog('7')"><span id="arrow7" class="glyphicon glyphicon-menu-up" style="color:#9a9a9a"></a></h3>
+
+	<div id = "expandable7">
+		<div class = "row">
+			<div class = "col-md-1">
+				<p style="font-size:18px">
+					2015
+				</p>
+			</div>
+			<div class = "col-md-11">
+				<p style="font-size:18px">
+					<b>MapReduce: A Framework for Distributed Computation</b> (in Java)
+					<a href="javascript:Tog('8')">
+						<span id="arrow8" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+			
+		</div>
+		<div id="expandable8" style="overflow:hidden;display:none">
+			<ul>
+				<li>Developed a robust, scalable framework to distribute computation to multiple computing devices over the network.</li>
+			</ul>
+		</div>
+
+		<div class = "row">
+			<div class = "col-md-1">
+				<p style="font-size:18px">
+					2015
+				</p>
+			</div>
+			<div class = "col-md-11">
+				<p style="font-size:18px">
+					<b>Qatar Student Initiated Undergraduate Research Fellowship</b>
+					<a href="javascript:Tog('9')">
+						<span id="arrow9" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+			
+		</div>
+		<div id="expandable9" style="overflow:hidden;display:none">
+			<ul>
+				<li>Explored the possibility of using general purpose computing devices as switches in a software defined network and using path prediction to pre-empt wireless handoffs.</li>
+			</ul>
+		</div>
+
+		<div class = "row">
+			<div class = "col-md-1">
+				<p style="font-size:18px">
+					2015
+				</p>
+			</div>
+			<div class = "col-md-11">
+				<p style="font-size:18px">
+					<b>Adaptive Bit-rate Video Streaming Proxy</b> (in C)
+					<a href="javascript:Tog('10')">
+						<span id="arrow10" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+			
+		</div>
+		<div id="expandable10" style="overflow:hidden;display:none">
+			<ul>
+				<li>Implemented a proxy to adapt video quality based on network bandwidth with a DNS server to balance load across multiple media servers.</li>
+			</ul>
+		</div>
+
+		<div class = "row">
+			<div class = "col-md-1">
+				<p style="font-size:18px">
+					2015
+				</p>
+			</div>
+			<div class = "col-md-11">
+				<p style="font-size:18px">
+					<b>Peer-to-Peer File Transfer System</b> (in C)
+					<a href="javascript:Tog('11')">
+						<span id="arrow11" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+			
+		</div>
+		<div id="expandable11" style="overflow:hidden;display:none">
+			<ul>
+				<li>Implemented a bit-torrent like system for file sharing with TCP sliding window for flow control and reliability.</li>
+			</ul>
+		</div>
+
+		<div class = "row">
+			<div class = "col-md-1">
+				<p style="font-size:18px">
+					2015
+				</p>
+			</div>
+			<div class = "col-md-11">
+				<p style="font-size:18px">
+					<b>Oracle: Patent Analysis System</b> (in Python)
+					<a href="javascript:Tog('12')">
+						<span id="arrow12" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+			
+		</div>
+		<div id="expandable12" style="overflow:hidden;display:none">
+			<ul>
+				<li>Developed, in a team of 4, a patent analysis system that employed NLP to identify research areas being explored by companies for CarnegieApps Hackathon 2015.</li>
+			</ul>
+		</div>
+
+		<div class = "row">
+			<div class = "col-md-1">
+				<p style="font-size:18px">
+					2014
+				</p>
+			</div>
+			<div class = "col-md-11">
+				<p style="font-size:18px">
+					<b>Sequence Based Named Entity Tagger</b> (in Python)
+					<a href="javascript:Tog('13')">
+						<span id="arrow13" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+			
+		</div>
+		<div id="expandable13" style="overflow:hidden;display:none">
+			<ul>
+				<li>Developed a feature set and tagger to identify named entities in a body of text with the goal of evaluating the performance against a chunk-based Named Entity tagger</li>
+			</ul>
+		</div>
+
+		<div class = "row">
+			<div class = "col-md-1">
+				<p style="font-size:18px">
+					2014
+				</p>
+			</div>
+			<div class = "col-md-11">
+				<p style="font-size:18px">
+					<b>Dynamic Memory Allocator</b> (in C)
+					</a>
+				</p>
+			</div>			
+		</div>		
+
+	</div>
+
+	<h3 style="color:#8d5a5a">Leadership and Activities
+	<a href="javascript:Tog('14')"><span id="arrow14" class="glyphicon glyphicon-menu-up" style="color:#9a9a9a"></a></h3>
+
+	<div id = "expandable14">
+		<div class = "row">
+			<div class = "col-md-3">
+				<p style="font-size:18px">
+					July'15
+				</p>
+			</div>
+			<div class = "col-md-4">
+				<p style="font-size:18px">
+					<b>European Innovation Academy</b>
+				</p>
+			</div>
+			<div class = "col-md-5">
+				<p style="font-size:18px">
+					Nice, France   
+					<a href="javascript:Tog('15')">
+						<span id="arrow15" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+		</div>
+		<div id="expandable15" style="overflow:hidden;display:none">
+			<ul>
+				<li>Worked with a diverse team of 5 to build, launch and promote an online Uber-like platform for seeking and providing technological support.</li>
+			</ul>
+		</div>
+
+		<div class = "row">
+			<div class = "col-md-3">
+				<p style="font-size:18px">
+					Jan'15
+				</p>
+			</div>
+			<div class = "col-md-4">
+				<p style="font-size:18px">
+					<b>Leadershape Institute</b>
+				</p>
+			</div>
+			<div class = "col-md-5">
+				<p style="font-size:18px">
+					Doha, Qatar    
+					<a href="javascript:Tog('16')">
+						<span id="arrow16" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+		</div>
+		<div id="expandable16" style="overflow:hidden;display:none">
+			<ul>
+				<li>Participated in a 6-day intensive leadership development workshop.</li>
+			</ul>
+		</div>
+
+		<div class = "row">
+			<div class = "col-md-3">
+				<p style="font-size:18px">
+					Jan'14 -- May'14
+				</p>
+			</div>
+			<div class = "col-md-4">
+				<p style="font-size:18px">
+					<b>Language Bridges Program</b>
+				</p>
+			</div>
+			<div class = "col-md-5">
+				<p style="font-size:18px">
+					Doha, Qatar    
+					<a href="javascript:Tog('17')">
+						<span id="arrow17" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a">
+					</a>
+				</p>
+			</div>
+		</div>
+		<div id="expandable17" style="overflow:hidden;display:none">
+			<ul>
+				<li>Co-taught basic English language to migrant laborers.</li>
+			</ul>
+		</div>
+	</div>
+
+	<h3 style="color:#8d5a5a">Skills and Interests
+	<a href="javascript:Tog('18')"><span id="arrow18" class="glyphicon glyphicon-menu-up" style="color:#9a9a9a"></a></h3>
+
+	<div id = "expandable18">
+		<ul>
+			<li>
+				<ul class = "list-inline">
+					<li><h5> Languages: </h5></li>
+					<li>English (Native)</li>
+					<li>Urdu (Native)</li>
+					<li>Spanish (Elementary)</li>
+				</ul>
+			</li>
+			<li>
+				<ul class = "list-inline">
+					<li>Travelling</li>
+					<li>Cooking</li>
+					<li>Photography</li>
+					<li>Reading Fiction</li>
+					<li>Guitar</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+</html>
