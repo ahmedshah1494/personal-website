@@ -1,9 +1,17 @@
+.nav {
+  background-color: #fdece2;
+  height: 40px;
+}
 .nav a {
   color: #8d5a5a;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: bold;
   padding: 14px 10px;
   text-transform: uppercase;
+}
+
+.nav ul {
+  padding-top:10px;
 }
 
 .nav li {
