@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css">
+	    <link rel="stylesheet" href="main.css">
+	    <script language="JavaScript" type="text/javascript">
+	      function Tog(i){
+	            var expandable = document.getElementById("expandable".concat(i));
+	            var arrow = document.getElementById("arrow".concat(i));
+	            var icon_state = arrow.className;
+	            if (icon_state == "glyphicon glyphicon-menu-down"){
+	            	expandable.style.display = "block";
+	            	arrow.className = "glyphicon glyphicon-menu-up";
+	            }
+	            else if (icon_state == "glyphicon glyphicon-menu-up"){
+	            	expandable.style.display = "none";	
+	            	arrow.className = "glyphicon glyphicon-menu-down";
+	            }
+	          }
+	    </script>
+	</head>
+
+	<div class="nav">
+      <div class="container">
+        <ul class = "pull-left">
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">Miscellaneous</a></li>
+        </ul>
+        <ul class = "pull-right">
+          <li><a href="index.html">Muhammad Ahmed Shah</a></li>
+        </ul>
+      </div>
+    </div>
+    <br><br>
+    <p> Click on <span class="glyphicon glyphicon-menu-down" style="color:#9a9a9a"></span> to read more details </p>
+
+    <ul>
+    	<li>
+    		<h3 style="color:#8d5a5a">There is a New Sheriff in Town: Social Media <small>by Muhammad Ahmed Shah</small>
+			<a href="javascript:Tog('1')"><span id="arrow1" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a"></a></h3>
+
+			<div id="expandable1" style="display:none">
+				<h4>Abstract</h4>
+				<p>The development of social media, complemented with the popularity of footage capturing devices, has made surveillance accessible to the masses. This paper argues that social media institutes, to a certain degree, an atmosphere of accountability and responsibility by instilling in the people the realization that every action that they do in public can be recorded and the footage proliferated over social media. Survey conducted over a diverse sample of 100 social media users evidences that the feeling of being under surveillance is very real due to which people tend to modify their real life behavior to avoid getting into tedious predicaments. I examine how this phenomenon affects individual users using examples of incidents in which people have been held accountable for actions that they performed without the realization that they are being recorded. Extending this argument to institutions I examine how formal establishments such as corporations, law enforcement agencies and even governments, previously considered immune to surveillance, are forced to be mindful of their actions.</p>
+
+				<p>Read the full paper <a href="textfiles/socialmedia.pdf">[PDF]</a></p>
+			</div>
+    	</li>
+    	<li>
+    		<h3 style="color:#8d5a5a">The If, How and What of Media Exposure and Disordered Eating: A Literature Review <small>by Muhammad Ahmed Shah</small>
+			<a href="javascript:Tog('2')"><span id="arrow2" class="glyphicon glyphicon-menu-down" style="color:#9a9a9a"></a></h3>
+
+			<div id="expandable2" style="display:none">
+				<h4>Abstract</h4>
+				<p>This literature review examines the relationship between media exposure andeating disorders by presenting and critiquing 6 articles published between 1994 and 2014. It presents early research that examines how psychological byproducts of exposure to popular media, such as internalization of thin-body ideals, are predictive of disordered eating behavior. Then it examines later research into the specific types and genres of media that are most strongly related to disordered eating and their variance across genders. Finally it touches upon the impact of the modern social media paradigm promotes body dissatisfaction and other psychological traits that have been directly or indirectly linked to the development of eating disorders.</p>
+
+				<p>Read the full paper <a href="textfiles/disordered-eating.pdf">[PDF]</a></p>
+			</div>
+    	</li>
+    </ul>
+
+</html>
