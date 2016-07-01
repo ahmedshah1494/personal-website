@@ -2,7 +2,7 @@
   background-color: #FB5F03;
   height: 40px;
   opacity: 1.0;
-  z-index: 1;
+  z-index: 100;
 }
 .nav a {
   color: #FFFFFF;
@@ -20,12 +20,6 @@
   display: inline;
 }
 
-.jumbotron {
-  background:url('images/wordcloud.png') no-repeat fixed;
-  height: 650px;
-  background-size: cover;
-  opacity: 1.0;
-}
 .slide2 {
   background-color: #fdece2;
   height: 1000px;
@@ -34,14 +28,31 @@
 }
 
 #slide1 {
-  background-color: rgba(255,255,255,1);
+  background:url('images/wordcloud.png') no-repeat fixed;
+  height: 800px;
+  background-position: center;
+  opacity: 1.0;
+  margin-bottom: 0;
 }
 
-h1 {
+#slid2{
+  margin-top: 0;
+}
+.content{ 
+  margin: 0 auto;
+  width: 960px; 
+  z-index: 2;
+}
+
+#name {
   color:#FB5F03;
-  background: transparent;
+  background-color: rgba(255,255,255,0);
+  opacity: 1.0
+  position: relative;
+  padding-top: 670px;
+  margin-bottom: 0;
 }
 
-p {
-  background-color: transparent;
+#uni {
+  margin-bottom: 0;
 }
