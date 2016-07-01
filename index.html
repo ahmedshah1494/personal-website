@@ -2,8 +2,8 @@
 <html>
 
   <head>
-    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-    
+     <!-- Include jQuery -->
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>    
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="main.css">
     <script language="JavaScript" type="text/javascript">
@@ -11,6 +11,51 @@
             var expandable = document.getElementById('expandable');
             expandable.style.display = x;
           }
+      $(function(){
+        var nav = $('#nav');
+        var navHomeY = nav.offset().top + 5;
+        var isFixed = false;
+
+        var $w = $(window);
+        $w.scroll(function(){
+          var scrollTop = $w.scrollTop();
+          var shouldBeFixed = scrollTop > navHomeY
+          if (shouldBeFixed && !isFixed){
+            nav.css({
+              position: 'fixed',
+              top: 0,
+              left: nav.offset().left,
+              width: nav.width()
+            });
+            isFixed = true;
+          }
+          else if (!shouldBeFixed && isFixed){
+            nav.css({
+              position: 'static'
+            });
+            isFixed=false
+          }          
+        })
+      });
+      $(function(){
+        var img = $('#img');
+        var imgTop = img.offset().top;
+        var opacityPerPixel = 1.8/img.height();
+        var $w = $(window);
+        $w.scroll(function(){
+          var scrollTop = $w.scrollTop();
+          var currOpacity = img.css("opacity");
+          var newOpacity = 1.0 - (opacityPerPixel * (scrollTop - imgTop));
+          console.log(newOpacity);
+          if (newOpacity > 1.0){
+            newOpacity = 1.0
+          }
+          else if (newOpacity < 0.0){
+            newOpacity = 0.0;
+          }
+          img.css({opacity: newOpacity})
+        })
+      })
     </script>
 
     <script>
@@ -26,7 +71,7 @@
   </head>
 
   <body>
-    <div class="nav">
+    <div class="nav", id="nav">
       <div class="container">
         <ul class = "pull-left">
           <li><a href="cv.html">CV</a></li>
@@ -40,10 +85,12 @@
       </div>
     </div>
 
-    <div class="jumbotron"></div> 
-
-    <h1 align='center' style="color:#8d5a5a">Muhammad Ahmed Shah</h1>
-    <p class = "lead" align = "center"> Carnegie Mellon University <br> Computer Science <br> Class of 2017</p>    
+    <div id='slide1'>
+      <div class="jumbotron" id="img"></div> 
+      <h1 align='center'>Muhammad Ahmed Shah</h1>
+      <p class = "lead" align = "center"> Carnegie Mellon University <br> Computer Science <br> Class of 2017</p>    
+    </div>
+    <div class="slide2"></div>
     
   </body>
 </html>

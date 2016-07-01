@@ -1,9 +1,11 @@
 .nav {
-  background-color: #fdece2;
+  background-color: #FB5F03;
   height: 40px;
+  opacity: 1.0;
+  z-index: 1;
 }
 .nav a {
-  color: #8d5a5a;
+  color: #FFFFFF;
   font-size: 14px;
   font-weight: bold;
   padding: 14px 10px;
@@ -19,8 +21,23 @@
 }
 
 .jumbotron {
-  background-image:url('images/wordcloud.png');
+  background:url('images/wordcloud.png') no-repeat fixed;
   height: 650px;
+  background-size: cover;
+  opacity: 1.0;
+}
+.slide2 {
+  background-color: #fdece2;
+  height: 1000px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+h1 {
+  color:#FB5F03;
+  background: transparent;
+}
+
+p {
+  background-color: transparent;
 }
