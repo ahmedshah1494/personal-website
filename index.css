@@ -3,14 +3,14 @@
 }
 
 #portrait {
-  width: 25vh;
+  width: 30vh;
   height: auto;
 }
 
 #portrait_div {
-  position: relative;
-  padding-top: 25vh;
-  padding-left: 10vh;
+  position: absolute;
+  /*padding-top: 15vh;*/
+  padding-left: 75%;
 }
 
 #slide3{
@@ -38,14 +38,25 @@
 
 .content{ 
   margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: rgba(255,255,255,0);
   width: 100%; 
   height: 100%;
   z-index: 2;
 }
 
+#about{
+  padding-top: 5vh;
+}
+
 #intro {
   position: relative;
+}
+h1 {
+  color:#FB5F03;
+  padding-bottom: 10px;
 }
 #name {
   color:#FB5F03;
