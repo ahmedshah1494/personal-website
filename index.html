@@ -3,7 +3,8 @@
 
   <head>
      <!-- Include jQuery -->
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>    
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>  
+    <script type='text/javascript' src='js/jquery.stellar.min.js'></script>    
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="index.css">
@@ -16,9 +17,6 @@
         var nav = $('#nav');
         var navHomeY = nav.offset().top + 5;
         var isFixed = false;
-
-        var name = $('#name');
-        var uni = $('#uni');
         var opacityPerPixel = 1/550;
 
         var $w = $(window);
@@ -42,16 +40,16 @@
           }
 
           var newOpacity = (opacityPerPixel * (scrollTop - navHomeY));
-          console.log(newOpacity);
+          // console.log(newOpacity);
           if (newOpacity > 0.9){
             newOpacity = 0.9;
           }
           else if (newOpacity < 0){
             newOpacity = 0;
           }
-          name.css("background-color", "rgba(255,255,255,"+newOpacity+")");
-          uni.css("background-color", "rgba(255,255,255,"+newOpacity+")");
-
+          $.stellar()
+          $('#intro').css("background-color", "rgba(255,255,255,"+newOpacity+")");
+          $('#about').css("opacity", (newOpacity + 0.1));
         })
       });
     </script>
@@ -85,12 +83,21 @@
 
     
     <div id='slide1'>
-      <div class="content">
+      <div class="content", id="intro", data-stellar-ratio="0.8">
         <h1 align='center', id="name">Muhammad Ahmed Shah</h1>
-        <p class = "lead", align = "center", , id="uni"> Carnegie Mellon University <br> Computer Science <br> Class of 2017</p>    
+        <p class = "lead", align = "center", id="uni">Ever Ready Traveller<br>Computer Scientist in the Making<br>Foodie for Life</p>    
       </div>
     </div>
-    <div class="slide2">
+
+    <div id="slide2">
+      <div class="content" id="about">
+        <div id='portrait_div'>
+          <img class="img-circle" id="portrait" src="images/me.JPG">
+        </div>
+      </div>
+    </div>
+
+    <div id="slide3">
     </div>
     
   </body>
