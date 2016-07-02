@@ -3,7 +3,8 @@
 }
 
 #portrait {
-  width: 30vh;
+  position: relative;
+  width: 25vw;
   height: auto;
 }
 
