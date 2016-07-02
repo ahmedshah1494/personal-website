@@ -15,14 +15,14 @@
 }
 
 #slide3{
-  /*background: url('images/random.JPG') no-repeat fixed;*/
+  background: url('images/random.JPG') no-repeat fixed;
   background-size: cover;
-  height: 70vh;
+  height: 25vh;
 }
 
 #slide2 {
   background-color: #fdece2;
-  height: 80vh;
+  height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -67,4 +67,18 @@ h1 {
 
 #uni {
   margin-bottom: 0;
+}
+
+#contact li{
+  display: inline;
+  font-size: 30pt;
+  padding-right: 5.5vw;
+}
+
+#contact a{
+  color: #000000;
+}
+
+#contact a:hover{
+  color: #FB5F03;
 }
