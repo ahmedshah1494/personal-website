@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div id='banner'></div>
+  <div class="jumbotron jumbotron-fluid">  
+    <div class="intro">
+      <span>
+        <h1 class="display-3">{{ Name }}</h1>
+        <p class="lead" *ngFor="let para of Intro">{{ para }}</p>      
+      </span>                
+    </div>
+</div>
+</div>
+<div class='content'>
+  <div id='projects'>
+    <div class="row">    
+      <div class="col heading">
+        <h1 class='display-4'>Current And Recent Projects</h1>
+      </div>
+    </div>
+    <div class='row' id="rec_projects">    
+      <div class="project" *ngFor="let project of recent_projects" align="center">
+        <img [src]="project.image"/>
+        <p class="lead">{{project.name}}</p>
+      </div>
+    </div>
+  </div>  
+</div>
+

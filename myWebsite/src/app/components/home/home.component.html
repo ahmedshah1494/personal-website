@@ -1,0 +1,44 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div class="container"> -->
+  <div class='intro row'>
+    <div class="col-md-4 photo-div">
+      <img src="/assets/images/DP.jpg">
+    </div>
+    <div class="col-md-8">
+      <span>
+        <h1 class="display-4">{{ Name }}</h1>
+        <p class="lead" *ngFor="let para of Intro">{{ para }}</p>      
+      </span>
+    </div>    
+  </div>
+<!-- </div> -->
+<div class='summary'>
+  <div class="row">
+    <div class="col-md-4 contact">
+      <h4>Links</h4>
+      <p class="lead"><a href="mailto:mshah1@cmu.edu">mshah1@cmu.edu</a></p>
+      <p class="lead"><a href="https://github.com/shinigami1494">Github</a></p>
+      <p class="lead"><a href="https://www.linkedin.com/in/mahmedshah/">LinkedIn</a></p>
+      <p class="lead"><a href="https://scholar.google.com/citations?user=74MwzTcAAAAJ&hl=en">Google Scholar</a></p>
+    </div>
+    <div class="col-md-4 summary-items">
+      <h4>News</h4>
+      <ul>
+        <li *ngFor="let news_item of highlights | slice:0:2">  
+          <h5>{{ news_item.date }}</h5>        
+          <p class="lead">{{ news_item.news }}</p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4 summary-items">
+      <h4>Recent Publications</h4>
+      <ul>
+        <li *ngFor="let pub of recent_pubs | slice:0:2">
+          <h5>{{ pub.venue }}</h5>
+          <p class="lead">{{ pub.title }} [<a href="{{ pub.pdf }}">pdf</a>]</p>
+        </li>
+      </ul>
+    </div>
+  </div>  
+</div>
+

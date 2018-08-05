@@ -1,0 +1,51 @@
+.jumbotron{
+    background: transparent;
+    height: 65vh;
+    text-align: left;
+}
+.intro{
+    height: 100%;
+    display: flex;
+    text-align: justify;
+    width: 40vw;
+}
+.intro span{
+    margin-left: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#banner{     
+    background: linear-gradient(to right, rgba(255,255,255,1.0), rgba(255,255,255,.50), rgba(255,255,255,0.0)), url("/assets/images/banner.JPG") no-repeat;
+    /*box-shadow:inset 0 0 0 2000px rgba(250,255,255,0.3);*/
+    background-size: cover; 
+    width: 100%;
+    height: 65vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.content{
+    background-color: white;
+    margin: auto;
+}
+.heading{
+    text-align: center;
+}
+#rec_projects{  
+    margin: auto;
+    width: 70vw;
+}
+.project{
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    height: auto;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.project img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}

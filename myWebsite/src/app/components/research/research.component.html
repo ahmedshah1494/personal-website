@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-md-12 section-heading">
+        <h3 class="text-center">Research</h3>
+    </div>
+</div>
+<div class="row project-row" *ngFor="let project of reseach_projects">
+    <div class="col-md-8">
+        <h4>{{ project.title }}</h4>
+        <p class="text-justify" *ngFor="let para of project.description">{{ para }}</p>
+        <h6>Related Publications</h6>
+        <ul>
+            <li *ngFor="let pub of project.pubs">
+                <p class="text-justify">{{pub.citation}}[<a href="{{pub.pdf}}">pdf</a>]</p>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-4">
+        <div class="row" *ngFor="let image of project.images">
+            <div class="col-md-12">
+                <img src="{{ image.path }}">
+                <p class="text-center">{{ image.caption }}</p>
+            </div>            
+        </div>
+    </div>
+</div>

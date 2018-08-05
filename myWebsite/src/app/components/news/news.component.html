@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-12 section-heading">
+        <h3 class="text-center">News & Highights</h3>
+    </div>
+</div>
+<div class="row" *ngFor="let news_item of news_list">
+    <div class="col-md-2">
+        <p class="font-weight-bold">{{ news_item.date }}</p>
+    </div>
+    <div class="col-md-10">
+        <p class="lead">{{ news_item.news }}</p>
+    </div>
+</div>
